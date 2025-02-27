@@ -21,16 +21,19 @@
             font-weight: bold;
             animation: fadeIn 2s ease-in-out;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
+
         nav {
             display: flex;
             justify-content: center;
             background: #1d5b5b;
             padding: 10px;
         }
+
         nav a {
             color: white;
             padding: 10px 20px;
@@ -38,10 +41,12 @@
             transition: 0.3s;
             font-weight: bold;
         }
+
         nav a:hover {
             background: #2c7a7b;
             border-radius: 5px;
         }
+
         .hero {
             display: flex;
             flex-direction: column;
@@ -55,6 +60,7 @@
             font-weight: bold;
             padding: 20px;
         }
+
         .quote-btn {
             background: #ffcc00;
             color: black;
@@ -66,10 +72,12 @@
             margin-top: 20px;
             transition: 0.3s;
         }
+
         .quote-btn:hover {
             background: #ff9900;
             transform: scale(1.1);
         }
+
         .container {
             width: 95%;
             max-width: 800px;
@@ -80,13 +88,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2c7a7b;
-            color: white;
-            margin-top: 20px;
-        }
+
         .whatsapp-icon {
             position: fixed;
             bottom: 20px;
@@ -94,15 +96,9 @@
             z-index: 1000;
         }
 
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .service {
-            width: 48%;
-            margin-bottom: 20px;
+        .whatsapp-icon img {
+            width: 60px;
+            height: 60px;
         }
 
         @media (max-width: 768px) {
@@ -128,13 +124,12 @@
                 font-size: 24px;
             }
 
-            .service {
-                width: 100%;
-            }
-
             .whatsapp-icon {
                 bottom: 10px;
                 right: 10px;
+            }
+
+            .whatsapp-icon img {
                 width: 50px;
                 height: 50px;
             }
@@ -148,7 +143,7 @@
     <nav>
         <a href="#" onclick="showHome()">Home</a>
         <a href="#" onclick="showSection('about')">About Us</a>
-        <a href="#" onclick="showSection('why-choose-us')">Why Choose Us?</a>
+        <a href="#" onclick="showSection('why-choose-us')">Why Choose Us</a>
         <a href="#" onclick="showSection('services')">Our Services</a>
         <a href="#" onclick="showSection('contact')">Contact</a>
     </nav>
@@ -162,19 +157,19 @@
         <h2>Our Services</h2>
         <div class="services">
             <div class="service">
-                <h3>Residential Cleaning - R500</h3>
+                <h3>Residential Cleaning</h3>
                 <p>✔ Regular home cleaning (weekly, bi-weekly, monthly)</p>
                 <p>✔ Deep cleaning & move-in/move-out cleaning</p>
                 <p>✔ Kitchen, bathroom, and whole-house sanitization</p>
             </div>
             <div class="service">
-                <h3>Commercial Cleaning - R1500</h3>
+                <h3>Commercial Cleaning</h3>
                 <p>✔ Office cleaning & janitorial services</p>
                 <p>✔ Retail and business space cleaning</p>
                 <p>✔ Post-construction cleanup</p>
             </div>
             <div class="service">
-                <h3>Specialized Cleaning - R2500</h3>
+                <h3>Specialized Cleaning</h3>
                 <p>✔ Carpet & upholstery cleaning</p>
                 <p>✔ Window cleaning</p>
                 <p>✔ Airbnb & rental property cleaning</p>
@@ -183,8 +178,7 @@
     </div>
 
     <div class="container" id="why-choose-us">
-        <h2>Why Choose Us?</h2>
-        <div class="why-choose-us"></div>
+        <h2>Why Choose Us</h2>
         <ul>
             <li>Professional & Trained Staff – Our team is experienced, background-checked, and dedicated to quality service.</li>
             <li>Eco-Friendly Products – We use safe and effective cleaning products to protect your family and pets.</li>
@@ -206,7 +200,7 @@
     </div>
 
     <a href="https://wa.me/27734979016" class="whatsapp-icon" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp" style="width: 60px; height: 60px;">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
     </a>
 
     <footer>
