@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Didi Cleaning Services - Booking Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,16 +52,23 @@
         }
 
         .whatsapp-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        font-size: 50px;  /* Adjust size as needed */
+        color: #25D366;   /* WhatsApp green */
+        background: white;
+        border-radius: 50%;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
         }
 
-        .whatsapp-icon img {
-            width: 60px;
-            height: 60px;
+        .whatsapp-icon:hover {
+            color: #128C7E;
         }
+
 
         iframe {
             width: 100%;
@@ -110,7 +118,7 @@
     </div>
 
     <a href="https://wa.me/27734979016" class="whatsapp-icon" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
     </a>
 
     <footer>
