@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background: #2c7a7b;
             color: white;
@@ -70,7 +71,8 @@
             transform: scale(1.1);
         }
         .container {
-            width: 80%;
+            width: 95%;
+            max-width: 800px;
             margin: auto;
             padding: 20px;
             background: white;
@@ -85,6 +87,23 @@
             color: white;
             margin-top: 20px;
         }
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -98,10 +117,10 @@
         <a href="#" onclick="showSection('services')">Our Services</a>
         <a href="#" onclick="showSection('contact')">Contact</a>
     </nav>
-    
+
     <div class="hero">
         Leave the Cleaning to Us! <br>
-        <button class="quote-btn" onclick="window.location.href='qoute.html'">Get a Free Quote</button>
+        <button class="quote-btn" onclick="window.location.href='quote.html'">Get a Free Quote</button>
     </div>
 
     <div class="container" id="services">
@@ -131,13 +150,13 @@
     <div class="container" id="why-choose-us">
         <h2>Why Choose Us?</h2>
         <div class="why-choose-us"></div>
-            <ul>
-                <li>Professional & Trained Staff – Our team is experienced, background-checked, and dedicated to quality service.</li>
-                <li>Eco-Friendly Products – We use safe and effective cleaning products to protect your family and pets.</li>
-                <li>Affordable & Transparent Pricing – No hidden fees—just fair rates for excellent service.</li>
-                <li>Satisfaction Guaranteed – If you’re not happy, we’ll make it right!</li>
-            </ul>
-     </div>
+        <ul>
+            <li>Professional & Trained Staff – Our team is experienced, background-checked, and dedicated to quality service.</li>
+            <li>Eco-Friendly Products – We use safe and effective cleaning products to protect your family and pets.</li>
+            <li>Affordable & Transparent Pricing – No hidden fees—just fair rates for excellent service.</li>
+            <li>Satisfaction Guaranteed – If you’re not happy, we’ll make it right!</li>
+        </ul>
+    </div>
 
     <div class="container" id="about">
         <h2>About Us</h2>
@@ -151,7 +170,9 @@
         <p>📍 Service Areas: Northern Cape / Cape Town</p>
     </div>
 
-    <a href="https://wa.me/2763542441" class="whatsapp-icon" target="_blank">💬</a>
+    <a href="https://wa.me/27734979016" class="whatsapp-icon" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" style="width: 60px; height: 60px;">
+    </a>
 
     <footer>
         Contact Us: 0763542441 | didicleaningservices.picnics@gmail.com <br>
@@ -160,15 +181,15 @@
 
     <script>
         function showSection(sectionId) {
-            document.querySelector(".hero").style.display = "none"; 
+            document.querySelector(".hero").style.display = "none";
             document.querySelectorAll('.container').forEach(section => {
-                section.style.display = 'none'; 
+                section.style.display = 'none';
             });
             document.getElementById(sectionId).style.display = 'block';
         }
 
         function showHome() {
-            document.querySelector(".hero").style.display = "flex"; 
+            document.querySelector(".hero").style.display = "flex";
             document.querySelectorAll('.container').forEach(section => {
                 section.style.display = 'none';
             });
@@ -176,4 +197,3 @@
     </script>
 </body>
 </html>
-
